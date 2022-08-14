@@ -164,7 +164,7 @@ class BybitExchange(ExchangeBase):
         return OrderType[bybit_type]
 
     def supported_order_types(self):
-        return [OrderType.MARKET, OrderType.LIMIT, OrderType.LIMIT_MAKER]
+        return [OrderType.LIMIT, OrderType.LIMIT_MAKER]
 
     async def start_network(self):
         """
